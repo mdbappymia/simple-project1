@@ -13,6 +13,7 @@
 
 html {
     font-size: 10px;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -30,8 +31,23 @@ a:hover {
 
 /*************navbar*********/
 
+.navbar-toggler-icon {
+    color: #fff !important;
+    font-size: 3rem;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    height: 6rem;
+    background-color: rgb(0, 255, 128);
+}
+
 .part-1 {
-    background: linear-gradient(rgba(0, 0, 0, 0.226), rgba(0, 0, 0, 0.253)), url(./img/bird.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.678), rgba(0, 0, 0, 0.63)), url(./img/bird.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
@@ -404,7 +420,43 @@ ul li {
 }
 
 .f-heading {
-    padding: 10rem 0 2rem;
+    padding: 10rem 0 1rem;
     line-height: 4rem;
     font-size: 3rem;
+    font-weight: 300;
+}
+
+.f-description {
+    font-size: 1.6rem;
+    color: rgba(3, 3, 3, 0.575);
+}
+
+.f-num {
+    font-size: 1.6rem;
+    color: #00000062;
+}
+
+.f-num:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+.f-social-icon {
+    font-size: 2rem;
+    text-align: right;
+}
+
+.f-social-icon a {
+    padding: 1rem;
+}
+
+.f-social-icon a:hover {
+    color: black;
+}
+
+.footer {
+    width: 100%;
+    font-size: 2rem;
+    margin: auto;
+    padding: 3rem 0;
 }

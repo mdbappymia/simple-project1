@@ -31,4 +31,12 @@ $(document).ready(function() {
             },
         },
     });
+
+    $(".js--nav").waypoint(function(direction) {
+        if (direction == "down") {
+            $(".navbar-area").addClass("sticky");
+        } else {
+            $(".navbar-area").removeClass("sticky");
+        }
+    });
 });
